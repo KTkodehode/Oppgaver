@@ -1,0 +1,18 @@
+*{
+    border: 10px solid black;
+    margin:0 auto;      
+}
+
+section {
+    border: 10px solid green;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#per {
+    border: 100px solid black;
+}
