@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     background: rgba(50, 50, 50, 1);
     box-sizing: border-box;
 }
@@ -12,6 +12,7 @@ table {
     text-align: center;
     margin-left: auto;  
     margin-right: auto;
+
 }
 caption {
     color: rgb(206, 184, 61);
