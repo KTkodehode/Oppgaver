@@ -4,10 +4,8 @@ body{
     box-sizing: border-box;
 }
 .table-container{
-border: 3px solid black;
 margin:0 100px 0 100px;
 margin-top: 100px;
-box-shadow: 0px 0px 0px 1.5px rgb(0, 0, 0);
 }
 
 table {
@@ -61,4 +59,46 @@ font-size: 17px;
 }
 #eng-class:hover:after {
     content: 'lish';
+}
+
+#mat-class:hover {
+    background: rgb(126, 188, 187);
+    font-size: 17px;
+
+}
+
+#mat-class:hover:after {
+    content: 'hemathic';
+}
+#che-class:hover {
+    background: rgb(126, 188, 187);
+    font-size: 17px;
+
+}
+
+#che-class:hover:after {
+    content: 'mistry';
+}
+#phy-class:hover {
+    background: rgb(126, 188, 187);
+    font-size: 17px;
+
+}
+
+#phy-class:hover:after {
+    content: 'sics';
+}
+#lab-class:hover {
+    background: rgb(255, 255, 255);
+    font-size: 17px;
+
+}
+
+#lab-class:hover:after {
+    content: 'ORATORY';
+}
+#sport-class:hover {
+    background: rgb(50, 185, 82);
+    font-size: 17px;
+
 }
