@@ -1,7 +1,6 @@
 function doubleSwap(string, charA, charB) {
 let swap = " ";
 
-
 for (let i = 0; i < string.length; i++) {
 
     if (string[i] === charA){
