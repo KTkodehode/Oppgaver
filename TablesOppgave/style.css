@@ -49,8 +49,13 @@ text-orientation: upright;
 }
 td:hover {
 font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-font-size: 20px;
+/* font-size: 20px; */
+/* -webkit-transform: scale (1.1); */
+scale: 1.1;
 
+}
+#test{
+    
 }
 #eng-class:hover  {
 background: rgb(126, 188, 187);
