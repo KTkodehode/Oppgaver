@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 html{
     background: gray;
@@ -9,23 +9,36 @@ body{
     min-height: 100vh;
 }
 .top-container {
-    background: black;
+    background: rgb(22, 76, 47);
+    height: 100px;
 }
 .top-container ul{
-    color:rgb(94, 92, 92);
+    color:rgb(233, 220, 220);
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     justify-content: space-around;    
+
 }
 
 .top-container li {
 list-style: none;
+margin-top: 40px;
 }
-.top-container :hover{
-    transform: scale(1.2);
+.first-para {
+/* display: inline-block; */
+    text-transform: uppercase;
+}
+.first-para::first-line {
+color:green;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background: black;
+word-spacing: 15px;
+letter-spacing: 1px;
+text-decoration: line-through;
+text-decoration-style: dotted;
 }
 .first-para::before, .first-para::after {
     content : "Real Lorem";
@@ -34,18 +47,114 @@ aside {
 float: right;
 background: orange;
 }
-
-@media only screen and(mid-width: 700px){
-    .first-para {
-        background: green;
-        width: 320px;
-        height: 240px;
-    }
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+.para-container {
+ display: inline-flex;
+}
+.top-container ul {
+    font-size: 30px;
+}
+#hey, #you, #me {
+    /* transition: width 2s, height 4s; */
+    transition: all .2s ease-in-out;
+}
+#hey:hover, #you:hover, #me:hover {
+    transform: scale(2.1);
     
+}
+#hey::marker{
+    content: 'Ⓗ ';
+    font-size: 1.2em;
+}
+#you::marker {
+    content: 'Ⓘ ';
+    font-size: 1.2em; 
+}
+#me::marker{
+    content: 'Ⓜ ';
+    font-size: 1.2em;
+}
+.top-title {
+    text-align: center;
+}
+.catch{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    clear: right;
+    
+}
+#aside-para {
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration: 1px blue underline;
+}
+#aside-para::first-letter{
+    color: brown;
+}
+#aside-para::selection{
+    color:orange;
+}
+.circleone{
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: auto;
+}
+.circletwo{
+    background: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: auto;
+}
+.circletree {
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-left: 100px;
+}
+
+.first-para img {
+    vertical-align:middle;
+    width: 150px;
+    height: 150px;
+    clip-path: circle(40%);
+    transition: all .5s ease-in-out;
+}
+
+.first-para img:hover {
+/* transform:scale(2); */
+margin-left: 100px;
+transform: rotate(360deg) scale(2);
+}
+.circleone:hover {
+    background-color: green;
+}
+.circletwo:hover {
+    background-color: rgb(210, 189, 0);
+}
+.circletree:hover {
+    background-color: rgb(157, 13, 13);
+}
+.clear-class {
+    /* background-color: blue; */
+    /* clear:right; */
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+.first-para span {
+    color: rgb(81, 220, 255);
+}
+.first-para span::after {
+    content: " --- This is";
 }
