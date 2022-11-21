@@ -2,10 +2,50 @@
     margin: 0;
     padding: 0;
 }
+html{
+    background: gray;
+}
+body{
+    min-height: 100vh;
+}
 .top-container {
     background: black;
 }
 .top-container ul{
-    color:white;
+    color:rgb(94, 92, 92);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-content: space-around;    
+}
+
+.top-container li {
+list-style: none;
+}
+.top-container :hover{
+    transform: scale(1.2);
+}
+.first-para::before, .first-para::after {
+    content : "Real Lorem";
+}
+aside {
+float: right;
+background: orange;
+}
+
+@media only screen and(mid-width: 700px){
+    .first-para {
+        background: green;
+        width: 320px;
+        height: 240px;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     
 }
