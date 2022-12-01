@@ -35,12 +35,10 @@ console.log(formatText("      Lorem IPSUM.    "))
                  Doing so, you should see "This is an automated response." in the console.
 */
 
-
 function autoReply(customFunction) {
   customFunction("This is an automated response.");
 }
-
-
+autoReply(console.log);
 
 /* Excercise #3b: Create a function that will display some provided text on the website.
                   For example, assuming you named your function: display
@@ -51,8 +49,11 @@ function autoReply(customFunction) {
                   And then call the autoReply function with your display function.
 */
 
-const display = () => console.log("Hello World!");
-display(autoReply)
+//? -- Answer Below --
+// function display(string) {
+//   document.body.textContent = string
+// }
+// display("hello world!");
 
 /* Excercise #4: Create a function that takes two arguments:
                  1. a callback function
@@ -61,15 +62,35 @@ display(autoReply)
                  And then call (run/execute) your function
                  (this is similar to Excercise #3 but with a custom message instead of only "This is an automated response.")
 */
+//? Exercise 4. Is this the right way?
+function sCall (callback, string = "String") { // Is this the right way?
+  callback("Callback", string);
+}
+sCall(console.log);
 
-
-
+let fCall = (caller, stringer = "Computer") => console.log(caller, stringer);
+fCall("Hello");
 /* Excercise #4b: In excercises 3 & 4 you've been providing named functions as callback functions, try to call (run/execute) both functions with anonymous functions instead.
                   Use both the function() {} syntax, and then also arrow function.
 */
+//? Exercise 3.
+let aReply = function() {
+  console.log('Anonymous function');
+};
+aReply();
 
+const bReply = () => { console.log ("Anonymous Arrow function")};
+bReply();
 
+//? Exercise 4. - Is this the right way?
+let cReply = function(callbackb, stringb = "Second String"){
+  callbackb("Second Callback");
+  console.log(stringb);
+}; 
+cReply(console.log);
 
+const dReply = (callbackc, stringc = "Third String") => console.log(callbackc, stringc);
+dReply("Third Callback");
 
 /* Excercise #5: Create a function takes the following parameters:
                  1. An array
@@ -97,6 +118,12 @@ display(autoReply)
 const fiveWords = ["one", "two", "three", "four", "five"]
 const threeFruits = ["apple", "banana", "mango"]
 
+const wordFunc = (fiveWords, calling) => {
+  for (let word of fiveWords) {
+    calling("Word " + word)
+  }
+}
+wordFunc(fiveWords, console.log);
 
 /* Excercise #6: Similar to task 5, but instead of first declaring a function and then writing a loop by hand:
                  Use an array method that loops through an array, and provide a callback function that will either console log or display each array element
@@ -108,7 +135,9 @@ const threeFruits = ["apple", "banana", "mango"]
                              banana at index 1
                              and so on...
 */
-
+threeFruits.forEach((letter, index) => {
+  console.log(letter + " is at index " + index)
+})
 
 /* Excercise #7: In Excercise #6 your task was to iterate through an array and just display the results, in this task try to use an array method that will 
                  Both iterate through an array and also return a new array with each number changed in value, for example:
