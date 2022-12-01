@@ -149,9 +149,12 @@ threeFruits.forEach((letter, index) => {
 */
 
 const nums = [1,2,3,4,5]
+nums.forEach(number => console.log(`${number * 3}`));
 
 
-
+// const numtwo = []
+// nums.forEach(number => numtwo.push(`${number * 3}`));
+// console.log(numtwo)
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
                  For example lets say we just want odd numbers from the nums array: 
