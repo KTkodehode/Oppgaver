@@ -148,6 +148,7 @@ threeFruits.forEach((letter, index) => {
                  console.log(tripleNums) // [3,6,9,12,15]
 */
 
+
 const nums = [1,2,3,4,5]
 nums.forEach(number => console.log(`${number * 3}`));
 
@@ -166,7 +167,8 @@ nums.forEach(number => console.log(`${number * 3}`));
                              https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
 
-
+const odds = nums.filter((num) => num % 2 === 1);
+console.log(odds);
 
 
 /* Excercise #9: Open excercise: Look through the list of array methods in the previous excercise Resource links (or google a bit yourself)
