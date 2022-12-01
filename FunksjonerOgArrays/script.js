@@ -4,18 +4,20 @@
 */
 
 // testrun:
-console.log(formatText("      Lorem IPSUM.    ")) // expected output (without quotes): "lorem ipsum."
+// console.log(formatText("      Lorem IPSUM.    ")) // expected output (without quotes): "lorem ipsum."
 
 /**
  * formatText function
  * returns given parameter (str) with leading and trailing spaces removed, and all letters converted to lowercase.
  */
-function formatText(str) {
-  return str.toLowerCase().trim();
-} 
 
+// function formatText(str) {
+//   return str.toLowerCase().trim();
+// } 
 
+const formatText = str => {return str.toLowerCase().trim()};
 
+console.log(formatText("      Lorem IPSUM.    "))
 
 /* Excercise #2:
       Change the function in excercise #1 to be an arrow function. 
@@ -24,6 +26,9 @@ function formatText(str) {
       If you're having issues with this excercise, try to first convert the excercise2alternative arrow function below to be a normal named function:
 */
 
+const excercise2alternative = () => {
+  return "hello"
+}
 
 
 
@@ -36,6 +41,7 @@ function formatText(str) {
 function autoReply(customFunction) {
   customFunction("This is an automated response.")
 }
+// console.log(autoReply())
 
 /* Excercise #3b: Create a function that will display some provided text on the website.
                   For example, assuming you named your function: display
