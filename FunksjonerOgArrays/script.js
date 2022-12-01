@@ -1,6 +1,6 @@
 /* Excercise #1:
       Fix the formatText function below such that it fits the given specification:
-       * returns given parameter (str) with leading and trailing spaces removed, and all letters converted to lowercase.
+       //* returns given parameter (str) with leading and trailing spaces removed, and all letters converted to lowercase.
 */
 
 // testrun:
@@ -26,19 +26,21 @@ console.log(formatText("      Lorem IPSUM.    "))
       If you're having issues with this excercise, try to first convert the excercise2alternative arrow function below to be a normal named function:
 */
 
-const excercise2alternative = () => {
-  return "hello"
-}
+// const excercise2alternative = () => {
+//   return "hello"
+// }
 
 
 /* Excercise #3: The autoReply function below takes a function as parameter, call (run/execute) the autoReply function with console.log as callback function.
                  Doing so, you should see "This is an automated response." in the console.
 */
 
+
 function autoReply(customFunction) {
-  customFunction("This is an automated response.")
+  customFunction("This is an automated response.");
 }
-autoReply();
+
+
 
 /* Excercise #3b: Create a function that will display some provided text on the website.
                   For example, assuming you named your function: display
