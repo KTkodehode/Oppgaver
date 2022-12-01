@@ -11,8 +11,11 @@ console.log(formatText("      Lorem IPSUM.    ")) // expected output (without qu
  * returns given parameter (str) with leading and trailing spaces removed, and all letters converted to lowercase.
  */
 function formatText(str) {
-  return str
-}
+  return str.toLowerCase().trim();
+} 
+
+
+
 
 /* Excercise #2:
       Change the function in excercise #1 to be an arrow function. 
@@ -21,9 +24,10 @@ function formatText(str) {
       If you're having issues with this excercise, try to first convert the excercise2alternative arrow function below to be a normal named function:
 */
 
-const excercise2alternative = () => {
-  return "hello"
-}
+
+
+
+
 
 /* Excercise #3: The autoReply function below takes a function as parameter, call (run/execute) the autoReply function with console.log as callback function.
                  Doing so, you should see "This is an automated response." in the console.
@@ -42,7 +46,8 @@ function autoReply(customFunction) {
                   And then call the autoReply function with your display function.
 */
 
-
+const display = () => console.log("Hello World!");
+display(autoReply)
 
 /* Excercise #4: Create a function that takes two arguments:
                  1. a callback function
