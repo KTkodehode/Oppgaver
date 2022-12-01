@@ -31,9 +31,6 @@ const excercise2alternative = () => {
 }
 
 
-
-
-
 /* Excercise #3: The autoReply function below takes a function as parameter, call (run/execute) the autoReply function with console.log as callback function.
                  Doing so, you should see "This is an automated response." in the console.
 */
@@ -41,7 +38,7 @@ const excercise2alternative = () => {
 function autoReply(customFunction) {
   customFunction("This is an automated response.")
 }
-// console.log(autoReply())
+autoReply();
 
 /* Excercise #3b: Create a function that will display some provided text on the website.
                   For example, assuming you named your function: display
