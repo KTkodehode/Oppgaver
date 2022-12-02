@@ -55,6 +55,8 @@ autoReply(console.log);
 // }
 // display("hello world!");
 
+
+
 /* Excercise #4: Create a function that takes two arguments:
                  1. a callback function
                  2. a string
@@ -63,14 +65,16 @@ autoReply(console.log);
                  (this is similar to Excercise #3 but with a custom message instead of only "This is an automated response.")
 */
 //? Exercise 4. Is this the right way?
-function sCall (callback, string = "String") {
+function sCall (callback, string) {
   callback("Callback", string);
 }
-sCall(console.log);
+sCall(console.log, "Comeback");
 
 let fCall = (caller, stringer = "Computer") => console.log(caller, stringer);
 fCall("Hello");
 
+let fCall2 = (callers, stringer) => callers(stringer);
+fCall2(console.log, "Hest");
 /* Excercise #4b: In excercises 3 & 4 you've been providing named functions as callback functions, try to call (run/execute) both functions with anonymous functions instead.
                   Use both the function() {} syntax, and then also arrow function.
 */
