@@ -63,13 +63,14 @@ autoReply(console.log);
                  (this is similar to Excercise #3 but with a custom message instead of only "This is an automated response.")
 */
 //? Exercise 4. Is this the right way?
-function sCall (callback, string = "String") { // Is this the right way?
+function sCall (callback, string = "String") {
   callback("Callback", string);
 }
 sCall(console.log);
 
 let fCall = (caller, stringer = "Computer") => console.log(caller, stringer);
 fCall("Hello");
+
 /* Excercise #4b: In excercises 3 & 4 you've been providing named functions as callback functions, try to call (run/execute) both functions with anonymous functions instead.
                   Use both the function() {} syntax, and then also arrow function.
 */
