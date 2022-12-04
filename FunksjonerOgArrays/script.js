@@ -55,6 +55,7 @@ autoReply(console.log);
 // }
 // display("hello world!");
 
+// autoReply(display);
 
 
 /* Excercise #4: Create a function that takes two arguments:
