@@ -75,7 +75,7 @@ let fCall = (caller, stringer = "Computer") => console.log(caller, stringer);
 fCall("Hello");
 
 let fCall2 = (callers, stringer) => callers(stringer);
-fCall2(console.log, "Hest");
+fCall2(console.log, "The Office");
 /* Excercise #4b: In excercises 3 & 4 you've been providing named functions as callback functions, try to call (run/execute) both functions with anonymous functions instead.
                   Use both the function() {} syntax, and then also arrow function.
 */
@@ -159,9 +159,9 @@ const nums = [1,2,3,4,5]
 nums.forEach(number => console.log(`${number * 3}`));
 
 
-// const numtwo = []
-// nums.forEach(number => numtwo.push(`${number * 3}`));
-// console.log(numtwo)
+const numtwo = []
+nums.forEach(number => numtwo.push(`${number * 3}`));
+console.log(numtwo)
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
                  For example lets say we just want odd numbers from the nums array: 
@@ -180,3 +180,4 @@ console.log(odds);
 /* Excercise #9: Open excercise: Look through the list of array methods in the previous excercise Resource links (or google a bit yourself)
                  and try to use some different array methods which you haven't seen before, and/or try to combine (chain together) multiple array methods.
 */
+slice,splice,map,values
