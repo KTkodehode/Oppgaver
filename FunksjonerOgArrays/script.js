@@ -180,4 +180,3 @@ console.log(odds);
 /* Excercise #9: Open excercise: Look through the list of array methods in the previous excercise Resource links (or google a bit yourself)
                  and try to use some different array methods which you haven't seen before, and/or try to combine (chain together) multiple array methods.
 */
-slice,splice,map,values
